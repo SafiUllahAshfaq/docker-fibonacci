@@ -1,13 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const otherPage = () => {
-	return (
-		<Fragment>
-			In some other page!
-			<Link to='/'>Go back home</Link>
-		</Fragment>
-	);
+export default () => {
+  return (
+    <div>
+      Im some other page
+      <Link to="/">Go back to home page!</Link>
+    </div>
+  );
 };
-
-export default otherPage;
